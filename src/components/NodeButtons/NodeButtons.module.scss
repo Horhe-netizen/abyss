@@ -1,0 +1,48 @@
+.buttons {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 10px);
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  transform: translateY(-50%);
+
+  &__node-btn {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #CBCFD7;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    &--undo {
+      background-color: #FFCD46;
+    }
+
+    &--confirm {
+      background-color: #56C473;
+    }
+
+    &--delete {
+      background-color: #FF5073;
+    }
+  }
+
+  &__node-btn-icon {
+    width: 100%;
+    height: auto;
+    
+    fill: #fff;
+  }
+}
