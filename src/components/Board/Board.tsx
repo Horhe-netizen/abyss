@@ -97,7 +97,7 @@ function Board() {
     if (headerRef.current) {
       headerHeight.current = headerRef.current.offsetHeight;
     }
-  });
+  }, []);
 
   return (
     <div className={styles['board']}>
